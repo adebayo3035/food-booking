@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* height: 100vh; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* BANNER SECTION */
+.banner-container{
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    font-weight: bolder;
+    justify-content: space-around;
+    width: 100%;
+}
+.banner-container .banner-text:first-child{
+    padding-top: 3%;
+}
+.banner-container .banner-text h3{
+    line-height: 36px;
+    font-size: 25px;
+}
+.banner-container .banner-text h3 i{
+    color:#FFC222;
+    font-style: normal;
+}
+.banner-container .banner-text #green-text{
+    color: green;
+    padding: 5px 0;
+    font-size: 16px;
+    word-spacing: 1.5px;
+}
+.banner-container .banner-text #delivery-text{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+}
+.banner-container .banner-text button{
+    color: #000;
+    background-color: #FFC222;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 0px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.banner-image img{
+    width: 400px;
+    height: 300px;
+}
+
+/* CARD SECTION */
+.card-container{
+    display: flex;
+    flex-direction: column;
+}
+.card-text{
+    text-align: center;
+    margin-top: 3%;
+}
+.card-text h2{
+    line-height: 60px;
+    font-weight: bolder;
+}
+.card-text p{
+    font-family:sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-around;
+}
+.card-1{
+    width: 25%;
+    justify-content: center;
+    margin-top: 1%;
+    margin: 3%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 9px;
+}
+.card-1:hover{
+    border: 2px solid red;
+    transition: 0.5s ease-in-out;
+}
+.card-1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 60px;
+    padding-top: 5%;
+}
+.card-1 h2{
+    color:#FFC222;
+    line-height: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+.card-1 p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: justify;
+    font-size: 14px;
+    padding-bottom: 5%;
+    line-height: 25px;
+}
+
+/* MEDIA QUERIES */
+/* HERO SECTION/BANNER */
+@media screen and (max-width: 900px){
+    .card{
+        flex-direction: column;
+    }
+    .card-1{
+        width: 90%;
+    }
+    .card-1 img{
+        width: 20%;
+        height:70px;
+    }
+}
+@media screen and (max-width: 600px){
+   .banner-container{
+       justify-content: flex-start;
+   }
+   .banner-container .banner-text{
+       margin-left: 3%;
+       flex:2;
+       
+   }
+   .banner-container .banner-image img{
+    width: 70%;
+   }
+
+   .banner-container .banner-text h3{
+       font-size: 20px;
+       letter-spacing: 2px;
+   }
+}
+
+
+/* END OF HERO SECTION */
+

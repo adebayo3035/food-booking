@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant HomePage</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/main.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("header_new.html"); 
+            $("#footer").load("footer.html"); 
+            $("#booking").load("booking.html")
+        });
+        </script>
+</head>
+<body>
+    <!-- <div class="nav-container">
+        <div class="navbar-logo">
+            <h2> SHLOGO</h2>
+        </div>
+        <div class="navbar-links">
+           <nav>
+               <ul>
+                   <li><a href="#"> Home</a></li>
+                   <li><a href="#"> Product</a></li>
+                   <li> <a href="#"> About</a></li>
+                   <li> <a href="#"> Contact</a></li>
+               </ul>
+            </nav>
+        </div>
+        <div class="nav-icon">
+            <div class="icon"><i class="fa fa-search"> </i></div>
+            <div class="icon"><i class="fa fa-user"> </i></div>
+            <div class="icon"><i class="fa fa-shopping-cart"> </i></div>
+        </div>
+    </div> -->
+    <div id ="header">
+
+    </div>
+    <!-- HERO SECTION/BANNER -->
+    <div class="banner-container">
+        <div class="banner-text">
+            <h3> PROMO !!!</h3>
+            <h3> BUY</h3>
+            <h3> TWO <i>PIZZAS</i></h3>
+            <p id="green-text"> Get one for free</p>
+            <p id="delivery-text"> Free Delivery within Lagos</p>
+            <a href="#"> <button> ORDER NOW</button></a>
+            
+        </div>
+        <div class="banner-image">
+            <img src="images/pizza.svg">
+        </div>
+    </div>
+    <span id="screen-size"></span>
+    <!-- CARD SECTION -->
+    <div class="card-container">
+        <div class="card-text">
+            <h2> Best way to eat healthy food</h2>
+            <p> Making a reservation at Délicious restaurant is easy and takes just a
+                couple of minutes.</p>
+        </div>
+        <div class="card">
+            <div class="card-1">
+                <img src="images/food-emoji.png" alt="">
+                <h2> Healthy Food</h2>
+                <p> Making a reservation at Délicious restaurant is easy and takes just a
+                    couple of minutes.</p>
+            </div>
+            <div class="card-1">
+                <img src="images/face.png" alt="">
+                <h2> Fast Food</h2>
+                <p> Making a reservation at Délicious restaurant is easy and takes just a
+                    couple of minutes.</p>
+            </div>
+            <div class="card-1">
+                <img src="images/coffee-cup.jpg" alt="">
+                <h2> Delicious Coffee</h2>
+                <p> Making a reservation at Délicious restaurant is easy and takes just a
+                    couple of minutes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOKING SECTION -->
+    <div id="booking"></div>
+
+    <!-- Fotter Section -->
+    <div id="footer">
+
+    </div>
+    
+</body>
+</html>

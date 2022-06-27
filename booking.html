@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/booking.css">
+    <title>Document</title>
+    <script src="javascript/main.js"></script>
+</head>
+<body>
+    <span id="screen-size"></span>
+    <div class="booking-container">
+        <div class="booking-image">
+            <img src="images/booking.svg">
+        </div>
+        <div class="booking-form">
+            <form method="" action="">
+                <h2> Book a table</h2>
+                <div class="input">
+                    <input type="text" name="username" placeholder="Name">
+                </div>
+                <div class="input">
+                    <input type="date" name="booking-date" placeholder="Date" id="booking_date">
+                </div>
+                <div class="input">
+                    <input type="time" name="booking-time" placeholder="Time">
+                </div>
+                <div class="input">
+                    <input type="tel" name="user-phone" placeholder="Phone No.">
+                </div>
+                <div class="message">
+                    <textarea placeholder ="Enter Your Message..."></textarea>
+                </div>
+                <button type="button" onclick="openPopup()"> Send Request</button>
+                <div class="popup" id="popup">
+                    <img src="images/mark.png">
+                    <h2> Thank You!</h2>
+                    <p> Your Booking has been received. Thanks!</p>
+                    <button type="submit" onclick="closePopup()"> OK</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let popup = document.getElementById('popup');
+        function openPopup(){ 
+            popup.classList.add('open-popup');
+        }
+        function closePopup(){
+            popup.classList.remove('open-popup');
+        }
+    </script>
+</body>
+</html>

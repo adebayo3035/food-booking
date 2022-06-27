@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    height: fit-content;
+    width: 100%;
+    background-color: #fff;
+    /* display: flex;
+    justify-content: space-between; */
+}
+label.logo{
+    font-style: normal;
+    font-size: 25px;
+    line-height: 70px;
+    color: #FFC222;
+    margin-left: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+    cursor: pointer;
+}
+nav ul{
+    /* display: flex;
+    justify-content: center; */
+    list-style-type: none;
+    padding-top: 10px;
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 36px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; 
+}
+nav .nav-icon{
+   position: absolute;
+   transform: translate(600px, -60px);
+}
+nav .nav-icon .icon{
+    margin: 0 10px;
+    background-color: #FFC222;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.checkbtn{
+    font-size: 30px;
+    color: red;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        /* background: #2c3e50; */
+        background: #fff;
+        top: 80px;
+       /* The Css attribute that makes the bar hide and display the navigation bar */
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        /* The Css attribute that makes the bar hide and display the navigation bar */
+    }
+    nav ul li{
+        display: block;
+        margin: 20px 0;
+        line-height: 30px;
+        color: #fff;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav .nav-icon{
+        position:absolute;
+        width: 40%;
+        height: fit-content;
+        top: 75px;
+       /* The Css attribute that makes the bar hide and display the navigation bar */
+        left: -70%;
+        text-align: center;
+        margin-left: 100px;
+        transition: all .5s;
+     }
+     nav .nav-icon .icon{
+        margin: 0 10px;
+        background-color: #FFC222;
+        border-radius: 50%;
+        padding: 10px;
+        display: inline-block;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}

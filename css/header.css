@@ -1,0 +1,110 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    
+}
+
+.nav-container .navbar-logo h2{
+    /* font-family: 'Inter'; */
+    font-style: normal;
+    /* font-weight: 800; */
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFC222;
+    padding: 0px 5px;
+}
+
+.nav-container .navbar-links nav ul{
+    list-style-type: none;
+}
+.nav-container .navbar-links nav ul li{
+    display: inline;
+    margin: 15px 30px 30px 5px;
+}
+.nav-container .navbar-links nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    /* font-weight: bold;  */
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+.nav-container .nav-icon{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+    width: 15%;
+}
+.nav-container .nav-icon .icon{
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    background-color: #FFC222;
+    width: 15%;
+    text-align: center ;
+    height: fit-content;
+}
+.nav-container .nav-icon .icon i{
+    padding: 5px;
+}
+
+/* Reponive Nav Bar */
+#menu-list, #hamburger, .panel,.nav-icon-responsive{
+    display: none;
+}
+@media screen and (max-width: 600px){
+    .nav-container{
+        display: none;
+    }
+    #menu-list{
+        display: block;
+        top: 0;
+        width: 100%;
+        margin-left: 2%;
+        float: left;
+        /* border: 2px solid red */
+    }
+    #menu-list span a{
+        font-style: normal;
+    /* font-weight: 800; */
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFC222;
+        padding: 0px 5px;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+    #hamburger{
+        float: right;
+        margin-top: -9%;
+        margin-right: 2%;
+        font-size: 30px;
+        border-radius: 3px;
+        cursor: pointer;
+        display: block;
+        width: 60px;
+        border: none;
+        background-color: #fff;
+    }
+    .panel{
+        padding: 0 18px;
+        background-color: #fff;
+    }
+    .panel ul{
+        list-style-type: none;
+        margin-top: 15%;
+    }
+    .panel ul li{
+        margin-left: 0;
+        /* margin: 2%; */
+        text-align: left;
+        margin-bottom: 5%;
+    }
+    .panel ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #000;
+        font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    
+    }
+}

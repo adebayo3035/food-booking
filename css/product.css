@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    box-sizing: border-box;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+.product-container .product-avatar h2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -170%);
+        color: #000;
+        font-weight: 900;
+        font-size: 60px;
+        opacity: 1.0;
+}
+.product-container .product-avatar img{
+    opacity: 0.6;
+    height: 300px;
+    width:100%;
+}
+.product-container h2{
+    padding: 1%;
+    padding-left: 5%;
+    font-size: 40px;
+    font-weight: 400;
+}
+.products{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    
+}
+.products .product-1{
+    width: 40%;
+    background: #FFF9E9;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+/* .products .product-1 #product-1-image{
+} */
+.products .product-1 #product-1-description{
+    flex: 2;
+}
+
+.products .product-1 #product-1-description h4{
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 2%;
+    margin-bottom: 10%;
+    font-size: 25px;
+    font-weight: 400;
+}
+.products .product-1 #product-1-description .price{
+    text-align: left;
+    padding-left: 4%;
+}
+.products .product-1 #product-1-description span{
+    font-size: 25px;
+    color: #FFC222;
+    font-weight: bold;
+    margin-right: 60%;
+}
+.products .product-1 #product-1-description i{
+    background-color: #FFC222;
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 2%;
+    cursor: pointer;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 900px){
+    .product-container{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .product-container .product-avatar h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    .product-container .products{
+        justify-content: flex-start;
+    }
+    .product-container .products .product-1{
+        width: 47%;
+        margin-right: 3%;
+    }
+    .product-container .products .product-1 #product-1-description i{
+        width: 40px;
+        height: 30px;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .product-container .products{
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        justify-content: flex-start;
+    }
+    .product-container .products .product-1{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+}
